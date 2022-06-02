@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+  <title>Questions</title>
+  <meta charset="utf-8">
+<link rel="stylesheet" href= "questions.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="topnav">
+<a href="./../index.html">Home</a>
+
+<!-- The navigation bar would not work unless the index.html file was inside of a folder, so that is why it is in the home folder instead of in a file by itself.-->
+  <a href="../history/history.html">History</a>
+  <a href="../consoles/types.html">Types</a>
+  <a href="../make/make.html">Making a Game</a>
+	  <div class="dropdown">
+	  <button class="dropbtn">Careers</button>
+	  <div class="dropdown-content">
+		<a href="../careers/artist/artist.html">Artist</a>
+		<a href="../careers/designer/designer.html">Game Designer</a>
+		<a href="../careers/programmer/programmer.html">Programmer</a>
+		<a href="../careers/producer/producer.html">Producer</a>
+	  </div>
+	 </div>
+  <a href="../source/source.html">Sources</a>
+  <a href="../questions/questions.html">Questions</a>
+</div>
+
+<hr>
+<h1>Questions</h1>
+<hr>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;If you have any additional questions about video games or want to learn more about the industry, please complete the form below:</p>
+<div>
+<form action="/questionnaire.php" method="POST">
+<label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+<label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  
+  <p><label>Input your question here:<br>
+<textarea name="question" rows="5" cols="40"></textarea></label></p>
+<input type="submit" onclick="alert('Thank you for your submission! We will contact you as soon as we can.')" value="Submit">
+<!-- I wanted to make a functional submission buttion, but I cannot seem to figure it out. It looks like I need a server that can use PHP. I do have such a server and I do not 
+know how to use PHP. So I am hesitant to try something more advanced that I do not fully understand. Information can be inputted into the form and the alert pops up when the 
+submit button is selected. The only issue is after pressing okay, it shows that my file cannot be accessed.-->
+</form>
+</div>
+</body>
+</html>
